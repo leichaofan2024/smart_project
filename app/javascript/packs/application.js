@@ -15,4 +15,13 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-import './application.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
+import '../stylesheets/application'
+
+$(document).on('turbolinks:load', function(){
+    $("#test_btn").click(function(){
+        alert($("#test").val());
+    });
+});
