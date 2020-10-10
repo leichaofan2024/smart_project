@@ -55,7 +55,7 @@ server "175.24.131.85",
   roles: %w{web app},
   ssh_options: {
     keys: %w(/Users/superlei/.ssh/id_rsa),
-    forward_agent: false,
-    auth_methods: %w(publickey password)
+    forward_agent: true,
+    auth_methods: %w(publickey)
     # password: "please use keys"
   }
