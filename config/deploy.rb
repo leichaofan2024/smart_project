@@ -8,6 +8,7 @@ set :migration_role, :app
 
 set :application, "smart_project"
 set :repo_url, "git@github.com:leichaofan2024/smart_project.git"
+set :deploy_to, "/srv/www/#{fetch :application}"
 
 set :rbenv_ruby, '2.6.5'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
