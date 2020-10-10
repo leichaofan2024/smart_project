@@ -51,7 +51,7 @@ set :repo_url, 'ssh://git@git.flyudesk.com:9876/udesk/udesk_yy_oss.git'
 # The server-based syntax can be used to override options:
 # ------------------------------------
 server "175.24.131.85",
-  user: "superlei",
+  user: "webuser",
   roles: %w{web app},
   ssh_options: {
     keys: %w(/Users/superlei/.ssh/id_rsa),
