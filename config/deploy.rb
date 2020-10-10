@@ -7,7 +7,7 @@ set :conditionally_migrate, true
 set :migration_role, :app
 
 set :application, "smart_project"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :repo_url, "git@github.com:leichaofan2024/smart_project.git"
 
 set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
