@@ -20,6 +20,7 @@ set :rails_env, 'production'
 role :app, %w{175.24.131.85}
 role :web, %w{175.24.131.85}
 role :db,  %w{175.24.131.85}
+set :user, 'webuser'
 
 set :repo_url, 'ssh://git@git.flyudesk.com:9876/udesk/udesk_yy_oss.git'
 
