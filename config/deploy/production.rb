@@ -41,22 +41,21 @@ set :repo_url, 'ssh://git@git.flyudesk.com:9876/udesk/udesk_yy_oss.git'
 #
 # Global options
 # --------------
- set :ssh_options, {
-   keys: %w(/Users/superlei/.ssh/id_rsa),
-   forward_agent: true
- }
-#
+#  set :ssh_options, {
+#    keys: %w(/Users/superlei/.ssh/id_rsa),
+#    forward_agent: true
+#  }
+# #
 
 
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server "example.com",
-#   user: "user_name",
-#   roles: %w{web app},
-#   ssh_options: {
-#     user: "user_name", # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: "please use keys"
-#   }
+server "175.24.131.85",
+  user: "superlei",
+  roles: %w{web app},
+  ssh_options: {
+    keys: %w(/Users/superlei/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(publickey password)
+    # password: "please use keys"
+  }
