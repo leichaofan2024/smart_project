@@ -45,7 +45,7 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.2'
   gem 'capistrano3-puma'
   gem 'capistrano3-nginx', '~> 2.0'
-  gem 'capistrano-sidekiq'
+  # gem 'capistrano-sidekiq'
   # gem 'capistrano-webpacker-precompile', require: false
 end
 
