@@ -46,7 +46,7 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano3-nginx', '~> 2.0'
   gem 'capistrano-sidekiq'
-  gem 'capistrano-webpacker-precompile', require: false
+  # gem 'capistrano-webpacker-precompile', require: false
 end
 
 group :test do

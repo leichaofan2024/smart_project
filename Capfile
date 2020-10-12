@@ -37,7 +37,7 @@ require "capistrano/rails/migrations"
 require 'capistrano/puma'
 require 'capistrano/nginx'
 require 'capistrano/sidekiq'
-require "capistrano/webpacker/precompile"
+# require "capistrano/webpacker/precompile"
 
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma  # Default puma tasks

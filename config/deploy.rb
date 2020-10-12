@@ -27,7 +27,7 @@ set :app_server_socket, "#{shared_path}/sockets/unicorn-#{fetch :application}.so
 set :app_server_port, 80
 set :pty,  false
 
-after 'deploy:updated', 'webpacker:precompile'
+# after 'deploy:updated', 'webpacker:precompile'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
