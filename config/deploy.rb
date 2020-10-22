@@ -12,7 +12,7 @@ set :deploy_to, "/srv/www/#{fetch :application}"
 
 set :rbenv_ruby, '2.6.5'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+set :rbenv_map_bins, %w{rake gem bundle ruby rails puma pumactl}
 set :rbenv_roles, :app # default value
 set :nginx_domains, "175.24.131.85"
 set :nginx_service_path, "service nginx"
@@ -26,7 +26,6 @@ set :nginx_ssl_certificate_key_path, "#{shared_path}/ssl/private"
 set :app_server_socket, "#{shared_path}/sockets/unicorn-#{fetch :application}.sock"
 set :app_server_port, 80
 set :pty,  false
-
 # after 'deploy:updated', 'webpacker:precompile'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
